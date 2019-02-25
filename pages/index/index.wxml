@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class='body'>
+<view class='templatemo_container'>
+  <view class='templatemo_top_panel'>
+     <text class='span'>Shopping Cart</text>
+   </view>
+   <view class='templatemo_header'>
+   <image src='../../image/templatemo_site_header.jpg' mode='aspectFit' style="width:180px; height:50px;"></image>
+   </view>
+
+   <view class='templatemo_menu_panel'>
+   <!--导航条-->
+    <view class="navbar">
+      <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" 
+      bindtap="navbarTap">{{item}}</text> 
+    </view>  
+    </view> 
+    <scroll-view scroll-y
+    style="height:400px;"
+    bindscrolltoupper="upper"
+    bindscrolltolower="lower"
+    bindscroll="scroll">
+        <view class='templatemo_content'>
+            <view class='templatemo_content_left'>        
+                <text class="left_one" style='space:pre-wrap'>Welcome to Our Flower Site</text>
+              <textarea style='height:100px'>This is a free CSS template provided from cssMoban.com website.You may download, modify and apply this CSS layout for your personal or business websites. Credit goes to PublicDomainPictures for photos.</textarea>
+<text class="left_two" style='space:pre-wrap'>New Products</text>
+
+   <view class='product_box'>
+               <text class='left_three'>Product One</text>
+               <view class='index_meun'>
+                 <image src="../../image/templatemo_image_01.jpg" mode='aspectFit' style="width:180px;height:138px"></image>
+               </view> 
+                <text style='space:pre-wrap'> Aliquam tristique lacus in sapien. 
+                Suspendisse potenti.
+                </text>
+               <text style='space:pre-wrap' class="price">PRICE: $14.00</text>  
+    </view>
+              <text class="buynow">Buy Now</text>
+               <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">Details</navigator>
+    <view class='product_box'>
+               <text class='left_three'>Product Two</text>
+               <view class='index_meun'>
+                 <image src="../../image/templatemo_image_02.jpg" mode='aspectFit' style="width:180px;height:138px"></image>
+               </view> 
+                <text style='space:pre-wrap'>Lorem ipsum dolor sit amet,
+                 consectetuer adipiscing.
+                </text>
+               <text style='space:pre-wrap' class="price">PRICE: $18.00</text>  
+    </view>
+              <text class="buynow">Buy Now</text>
+               <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">Details</navigator>
+<view class='product_box'>
+               <text class='left_three'>Product Three</text>
+               <view class='index_meun'>
+                 <image src="../../image/templatemo_image_03.jpg" mode='aspectFit' style="width:180px;height:138px"></image>
+               </view> 
+                <text style='space:pre-wrap'>Suspendisse potenti. Ut sed pede. 
+                Nullam vitae tellus.
+                </text>
+               <text style='space:pre-wrap' class="price">PRICE: $26.00</text>  
+    </view>
+              <text class="buynow">Buy Now</text>
+               <navigator url="/page/navigate/navigate?title=navigate" hover-class="navigator-hover">Details</navigator>
+            </view>
+          </view>
+  </scroll-view>
+</view>
+</view>
+
+

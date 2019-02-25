@@ -1,0 +1,66 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/index/classification",
+    "pages/index/userindex",
+    "components/shortcut/shortcut",
+    "pages/category/index",
+    "pages/category/list",
+    "pages/goods/index",
+    "pages/search/index",
+    "pages/flow/index",
+    "pages/flow/checkout",
+    "pages/user/index",
+    "pages/user/help",
+    "pages/order/index",
+    "pages/order/detail",
+    "pages/address/index",
+    "pages/address/create",
+    "pages/address/detail",
+    "pages/login/login",
+    "pages/logs/logs",
+    "pages/diary/index"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我的花店",
+    "navigationBarTextStyle": "black"
+  }, 
+ "tabBar": {
+  "color": "#a9b7b7",
+  "selectedColor": "#11cd6e",
+  "borderStyle": "white",
+  "list": [
+    {
+      "selectedIconPath": "image/首页.png",
+      "iconPath": "image/首页.png",
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    },
+    {
+      "selectedIconPath": "image/分类.png",
+      "iconPath": "image/分类.png",
+      "pagePath": "pages/category/index",
+      "text": "分类"
+    },
+    {
+      "selectedIconPath": "image/购物车.png",
+      "iconPath": "image/购物车.png",
+      "pagePath": "pages/flow/index",
+      "text": "购物车"
+    },
+    {
+      "selectedIconPath": "image/我的.png",
+      "iconPath": "image/我的.png",
+      "pagePath": "pages/index/userindex",
+      "text": "个人中心"
+    }]
+ }
+
+}

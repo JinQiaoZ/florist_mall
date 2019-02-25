@@ -1,0 +1,239 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 518032 */
+  src: url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.eot');
+  src: url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_518032_t2q88z3jok8iwwmi.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:60rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*本项目使用的18个图标  */
+.icon-zhiding:before{content: '\e739';}
+.icon-zuojiantou:before{content: '\e736';}
+.icon-youjiantou:before{content: '\e735';}
+.icon-shangjiantou:before{content: '\e734';}
+.icon-xiajiantou1:before{content: '\e733';}
+.icon-xiajiantou:before{content: '\e6cc';}
+.icon-gengduotianchong:before{content: '\e67f';}
+.icon-erweima:before{content: '\e65f';}
+.icon-fenleiorguangchangorqita:before{content: '\e64f';}
+.icon-dibiao:before{content: '\e64d';}
+.icon-bangzhu:before{content: '\e64a';}
+.icon-xinfeng:before{content: '\e640';}
+.icon-duihuaxinxi:before{content: '\e639';}
+.icon-sousuo:before{content: '\e62f';}
+.icon-shouye:before{content: '\e62d';}
+.icon-shezhi:before{content: '\e62a';}
+.icon-shanchu:before{content: '\e629';}
+.icon-dianhua:before{content: '\e61b';}
+
+
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 10rpx;
+  position: absolute;
+  left:20rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.body {
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Verdana, Arial, san-serif;
+	font-size: 11px;
+	color: #fff;
+	background: #fff;
+}
+
+.templatemo_container{
+	width: 400px;
+  height: 565px;
+	margin: 0 auto;
+	border: 10px solid #f2d9ef;
+  background: #f2d9ef bottom right no-repeat;
+}
+
+/* top panel */
+.templatemo_top_panel {
+	overflow: hidden;	
+	width: 350px;
+	height: 32px;
+	padding: 5px 4px;
+	background: #c82c74;
+	border-bottom: 1px solid #870843;
+}
+
+.templatemo_shopping_cart{
+	float: right;
+	width: 350px;
+	padding-top: 10px;
+	text-align: right;
+	font-size: 14px;
+	font-weight: bold;
+	color: #ffffff;
+}
+.span{
+ font-size:4vw;
+  display:block;
+  padding:1vh 0;
+  word-wrap:break-word;
+  word-break:normal;
+  text-align:right;
+}
+
+ .templatemo_header {
+	overflow: hidden;	
+	width: 350px;
+	height: 60px;
+	padding: 15px 4px;
+	background: #ebbce5 bottom right no-repeat;
+}
+.templatemo_banner{
+	width: 358px;
+	height: 95px; /* + 60 for padding top and bottom */
+	background: #ffffff;
+}
+ .jxlogo{
+    top: 166.5rpx;
+    margin-left: 110rpx;
+    width: 211rpx;
+    height: 161rpx;
+    float: right;
+    position: absolute;
+}
+
+.templatemo_menu_panel{
+	overflow: hidden;	
+	width: 358px;
+	height: 40px;
+	background: #440522;
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #440522;
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
+  line-height: 80rpx;
+}
+.navbar .item.active{
+  color: #c82c74;
+}
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4rpx;
+  background: #c82c74;
+
+}
+.templatemo_content{
+	width: 358px;
+  height: 1000px;
+	background: #811044;
+}
+.templatemo_content_left {
+	float: left;
+	width: 358px;
+}
+
+.left_one{
+ font-size: 35rpx;
+}
+.left_two{
+ font-size: 30rpx;
+ float: left;
+ margin: 0 0 20px 0;
+	padding: 5px 250px 5px 5px;
+	color: #ffffff;
+	font-weight: normal;
+	background-color: #440522;
+}
+.left_three{
+  margin: 0 0 20px 0;
+	padding: 15px 255px 5px 5px;
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.cleaner_with_height {
+	clear: both;
+	width: 100%;
+	font-size: 1px;	
+}
+.product_box {
+	float: left;
+  margin-bottom: 5px；
+}
+.buynow{
+	clear: both;
+	display: block;
+	float: left;
+	width: 65px;
+	padding: 2px 0;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;
+	background: #be457c;
+}
+.price{
+	font-size:16px;
+	margin-bottom: 18px;
+}
+
+
+.index_meun{
+  margin-top: 2PX;
+}
+/** 修改默认的navigator点击态 **/
+.navigator-hover {
+	clear: both;
+	display: block;
+	float: left;
+	width: 65px;
+	padding: 2px 0;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ffffff;
+	background: #be457c;
+}

@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="personalWrap">
+    <view class="personalMe" >
+
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class= "userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+<view class="line">
+</view> 
+ <!-- 列表 -->
+    <view class="personalList">
+        <view class="iconfont icon-yuding">我的预定</view>
+        <view class="iconfont icon-yue" >账户余额</view>
+        <view class="iconfont icon-xiugaimima" >密码修改</view>
+        <view class="iconfont icon-cb-chengchangriji" bindtap='onContent'>心情日记</view>             
+        <view class="iconfont icon-map f-34" bindtap='onAddrs'>收货地址</view>
+        <view class="iconfont icon-guanyu">关于花店</view>
+        <view class="iconfont icon-help f-34" bindtap='onHelp'>我的帮助</view>       
+    </view>
+   
+</view>
